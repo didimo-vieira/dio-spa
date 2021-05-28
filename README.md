@@ -1,4 +1,15 @@
-# DioSpa
+# Dio SPA
+
+Projeto de Angular SPA do Bootcamp da Avanade na DIO.
+
+Criado componente home para representar a página inicial, que é o índice do livro de receitas, onde é possível fazer busca.
+Cada elemento da lista de receitas também é um componente criado (item-lista). Este recebe do pai dados por Input para exibição.
+Ao clicar em uma receita, a aplicação abre um outro componente (item-aberto) em rota dedicada, que é a exibição completa da receita.
+Na visualização da receita existe o botão home que direciona para a rota principal.
+
+Foram utilizados os componentes do Angular Material: Toolbar, Icon, Card e Input.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 

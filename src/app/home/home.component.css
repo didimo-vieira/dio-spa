@@ -1,0 +1,14 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-form-field {
+    width: 200px;
+    font-size: 0.8rem;
+}
+
+.example-card {
+    max-width: 1000px;
+    width: 50%;
+    margin: 20px auto;
+}

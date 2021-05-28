@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+
+  <span>Livro de Receitas</span>
+
+  <span class="example-spacer"></span>
+
+  <mat-form-field class="example-form-field">
+    <mat-label>Filtro</mat-label>
+    <input matInput type="text" [(ngModel)]="filtro">
+    <button *ngIf="filtro" matSuffix mat-icon-button aria-label="Clear" (click)="filtro=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+</mat-toolbar>
+
+<div *ngIf="filtrados.length; else naoEncotrado">
+  <spa-item-lista *ngFor="let receita of filtrados" [item]="receita"></spa-item-lista>
+</div>
+
+<ng-template #naoEncotrado>
+  <mat-card class="example-card">Nenhuma receita encontrada</mat-card>
+</ng-template>
